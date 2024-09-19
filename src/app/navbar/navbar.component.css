@@ -1,0 +1,61 @@
+.custom-navbar {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.nav-link {
+  color: #708191 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home {
+  margin-right: 950px;
+}
+
+.nav-link:hover {
+  color: #070707 !important;
+}
+
+.navbar-toggler {
+  border-color: #222120;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0-4a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0-4a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11z"/></svg>');
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+}
+
+.cart-text {
+  font-size: 1.2rem; 
+  margin-right: 8px; 
+}
+
+.cart-badge {
+  background-color: #708191;
+  color: #fff;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.active {
+  color: #000000 !important;
+  font-weight: bold;
+}
