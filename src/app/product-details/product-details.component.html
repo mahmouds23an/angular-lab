@@ -25,10 +25,8 @@
         </div>
         <div class="price-info">
           <p class="card-text price">${{ productsDetail.price }}</p>
-          <p class="card-text">{{ productsDetail.shippingInformation }}</p>
         </div>
         <div>
-          <h6>more information</h6>
           <p class="more-info">
             <span> brand </span>: {{ productsDetail.brand }}
           </p>
@@ -38,20 +36,15 @@
         </div>
         <div>
           <div class="add-to-cart">
+            <button (click)="decreAmount()" [disabled]="amount == 0">-</button>
+            <span>{{ amount }}</span>
             <button
               (click)="increAmount()"
               [disabled]="amount === productsDetail.stock"
             >
               +
             </button>
-
-            <span>{{ amount }}</span>
-            <button (click)="decreAmount()" [disabled]="amount == 0">-</button>
           </div>
-          <p class="stock">
-            only <span>{{ productsDetail.stock }} left</span>
-          </p>
-          <p>don't miss it</p>
         </div>
         <div class="btns">
           <button>buy now</button>
